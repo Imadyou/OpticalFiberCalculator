@@ -18,7 +18,6 @@ function calculateTrackNumber() {
   if (fiberNumberInput === "") {
     resultDiv.style.color = "red";
     resultDiv.innerHTML = "Please enter a fiber number.";
-
     return;
   }
 
@@ -40,4 +39,34 @@ function calculateTrackNumber() {
   }
   resultDiv.style.color = "black";
   resultDiv.innerHTML = `The fiber track in the cable is ${trackNumber}.`;
+}
+
+function calculateRibbonNumber() {
+  let fiberNumberInput = document.getElementById("fiberNumber").value;
+  let resultDiv = document.getElementById("result");
+
+  if (fiberNumberInput === "") {
+    resultDiv.style.color = "red";
+    resultDiv.innerHTML = "Please enter a fiber number.";
+    return;
+  }
+
+  let fiberNumber = parseInt(fiberNumberInput);
+
+  if (isNaN(fiberNumber) || fiberNumber <= 0) {
+    resultDiv.style.color = "red";
+    resultDiv.innerHTML = "Please enter a valid positive number.";
+    return;
+  }
+
+  let divisionResult = fiberNumber / 4;
+  let ribbonNumber;
+
+  if (Number.isInteger(divisionResult)) {
+    ribbonNumber = divisionResult;
+  } else {
+    ribbonNumber = Math.ceil(divisionResult);
+  }
+  resultDiv.style.color = "black";
+  resultDiv.innerHTML = `The fiber ribbon number is ${ribbonNumber}.`;
 }
