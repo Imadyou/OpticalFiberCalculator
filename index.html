@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fiber Track and Ribbon Number Calculator</title>
+    <title>Opto-Fiber Calculator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Fiber Track and Ribbon Number Calculator</h1>
+      <!-- Background image -->
+      <img src="images/fiber1.jpeg" alt="Background Image" />
+
+      <!-- My page content -->
+      <h1>Fiber Track and Ribbon Calculator</h1>
       <div class="input-group">
         <label for="fiberNumber">Enter Fiber Number:</label>
         <input type="text" id="fiberNumber" placeholder="Enter a number" />
@@ -16,7 +20,13 @@
       <button onclick="calculateTrackNumber()">Calculate Track Number</button>
       <button onclick="calculateRibbonNumber()">Calculate Ribbon Number</button>
       <div id="result"></div>
+      <div id="colorCircle" class="circle"></div>
     </div>
+    <!-- Footer section -->
+    <footer>
+      <p>&copy; Imad Yousef 2024</p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

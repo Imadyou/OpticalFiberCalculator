@@ -38,16 +38,18 @@ function calculateTrackNumber() {
     trackNumber = Math.ceil(divisionResult);
   }
   resultDiv.style.color = "black";
-  resultDiv.innerHTML = `The fiber track in the cable is ${trackNumber}.`;
+  resultDiv.innerHTML = `The Fiber-track is: ${trackNumber}.`;
 }
 
 function calculateRibbonNumber() {
   let fiberNumberInput = document.getElementById("fiberNumber").value;
   let resultDiv = document.getElementById("result");
+  let colorCircle = document.getElementById("colorCircle");
 
   if (fiberNumberInput === "") {
     resultDiv.style.color = "red";
     resultDiv.innerHTML = "Please enter a fiber number.";
+    colorCircle.style.backgroundColor = "transparent";
     return;
   }
 
@@ -56,9 +58,11 @@ function calculateRibbonNumber() {
   if (isNaN(fiberNumber) || fiberNumber <= 0) {
     resultDiv.style.color = "red";
     resultDiv.innerHTML = "Please enter a valid positive number.";
+    colorCircle.style.backgroundColor = "transparent";
     return;
   }
 
+  // Calculate Ribbon Number
   let divisionResult = fiberNumber / 4;
   let ribbonNumber;
 
@@ -67,6 +71,13 @@ function calculateRibbonNumber() {
   } else {
     ribbonNumber = Math.ceil(divisionResult);
   }
+
+  // Calculate Fiber Color
+  let colors = ["red", "blue", "white", "green"];
+  let fiberPosition = (fiberNumber - 1) % 4;
+  let fiberColor = colors[fiberPosition];
+
   resultDiv.style.color = "black";
-  resultDiv.innerHTML = `The fiber ribbon number is ${ribbonNumber}.`;
+  resultDiv.innerHTML = `Fiber-Ribbon number is: ${ribbonNumber}.<br/>Fiber-color is: ${fiberColor}.`;
+  colorCircle.style.backgroundColor = fiberColor;
 }
