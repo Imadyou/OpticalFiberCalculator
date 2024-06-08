@@ -1,0 +1,42 @@
+<mxfile host="app.diagrams.net" modified="2024-06-08T16:42:07.665Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="8tRs9q48jDQ4nxweUdJN" version="24.5.2" type="device">
+  <diagram name="Sida-1" id="pqzU1a4xhVm1MYjBSCvL">
+    <mxGraphModel dx="989" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Kf2HENAQpt-Ljbb25ucx-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Kf2HENAQpt-Ljbb25ucx-1" target="Kf2HENAQpt-Ljbb25ucx-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf2HENAQpt-Ljbb25ucx-1" value="Enter fiberNumber" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf2HENAQpt-Ljbb25ucx-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Kf2HENAQpt-Ljbb25ucx-2" target="Kf2HENAQpt-Ljbb25ucx-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf2HENAQpt-Ljbb25ucx-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Kf2HENAQpt-Ljbb25ucx-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kf2HENAQpt-Ljbb25ucx-2" value="IS the result an integer?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="311" y="332" width="206" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf2HENAQpt-Ljbb25ucx-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Kf2HENAQpt-Ljbb25ucx-5" target="Kf2HENAQpt-Ljbb25ucx-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf2HENAQpt-Ljbb25ucx-5" value="Devide fiberNumber&amp;nbsp;&lt;div&gt;by 4&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf2HENAQpt-Ljbb25ucx-8" value="The fiberRibbonNr=result" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="407" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf2HENAQpt-Ljbb25ucx-10" value="yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="570" y="398" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf2HENAQpt-Ljbb25ucx-11" value="fiberRibbonNr is smallet integer greter than resutNr." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

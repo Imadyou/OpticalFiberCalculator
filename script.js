@@ -16,14 +16,16 @@ function calculateTrackNumber() {
   let resultDiv = document.getElementById("result");
 
   if (fiberNumberInput === "") {
+    resultDiv.style.color = "red";
     resultDiv.innerHTML = "Please enter a fiber number.";
-    resultDiv.classList.add("red");
+
     return;
   }
 
   let fiberNumber = parseInt(fiberNumberInput);
 
   if (isNaN(fiberNumber) || fiberNumber <= 0) {
+    resultDiv.style.color = "red";
     resultDiv.innerHTML = "Please enter a valid positive number.";
     return;
   }
@@ -36,6 +38,6 @@ function calculateTrackNumber() {
   } else {
     trackNumber = Math.ceil(divisionResult);
   }
-
+  resultDiv.style.color = "black";
   resultDiv.innerHTML = `The fiber track in the cable is ${trackNumber}.`;
 }
