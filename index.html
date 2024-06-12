@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Opto-Fiber Calculator</title>
+
     <link rel="stylesheet" href="styles.css" />
+    <style>
+    
+  </style>
   </head>
   <body>
     <div class="container">
@@ -13,20 +17,19 @@
 
       <!-- My page content -->
       <h1>Fiber Track and Ribbon Calculator</h1>
-      <div class="input-group">
-        <label for="fiberNumber">Enter Fiber Number:</label>
-        <input type="text" id="fiberNumber" placeholder="Enter a number" />
-      </div>
-      <button onclick="calculateTrackNumber()">Calculate Track Number</button>
-      <button onclick="calculateRibbonNumber()">Calculate Ribbon Number</button>
-      <div id="result"></div>
-      <div id="colorCircle" class="circle"></div>
-    </div>
-    <!-- Footer section -->
-    <footer>
-      <p>&copy; Imad Yousef 2024</p>
-    </footer>
 
-    <script src="script.js"></script>
-  </body>
-</html>
+      <div class="dropdown">
+        <a href="#"><h2>Choose Cable type🔌</h2></a>
+        <div class="dropdown-content">
+          <a href="profileCable.html"><h3>Profile Cable</h3></a>
+          <a href="s12Cable.html"><h3>S12 Cable</h3></a>
+        </div>
+      </div>
+      <!-- Footer section -->
+      <footer>
+        <p>&copy; Imad Yousef 2024</p>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+  </html>
