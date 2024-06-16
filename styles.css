@@ -33,40 +33,75 @@ a {
 }
 
 /* Style for the dropdown */
+
 .dropdown {
-  position: relative;
-  display: inline-block;
+  display: inline-block; /* Display the dropdown inline */
+  position: relative; /* Needed for positioning the dropdown content */
 }
 
-/* Style for the dropdown content */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 2rem;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-/* Style for the dropdown links */
-.dropdown-content a {
+.dropdown a:first-child {
+  /* Style the first anchor tag (heading) */
   display: block;
-  font-family: Tahoma;
-  font-size: 1em;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: #000;
-  padding: 5px;
+  padding: 10px 20px; /* Add padding with some space for the icon */
+  background-color: #f1f1f1; /* Light background color */
+  border-radius: 10px;
+
+  color: black; /* Text color */
+  font-size: 1.2em; /* Make the heading slightly larger */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Indicate clickable behavior */
 }
+
+.dropdown a:first-child h2 {
+  /* Style the heading element within the anchor */
+  margin: 0; /* Remove default margin */
+  display: inline-block; /* Allow text and icon to be side-by-side */
+  border-radius: 10px;
+}
+
+.dropdown a:first-child i {
+  /* Style the optional icon (replace with your icon class) */
+  margin-right: 5px; /* Add space between icon and text */
+  font-size: 1.2em; /* Match the heading size */
+  border-radius: 10px;
+}
+
+.dropdown-content {
+  /* Style the dropdown content container */
+  display: none; /* Hide by default */
+  position: absolute; /* Position the content relative to the trigger */
+  top: 100%; /* Place it below the trigger */
+  left: 0; /* Align it to the left */
+  background-color: #f1f1f1; /* Light background color */
+  min-width: 100%; /* Ensure it takes at least the full width of the trigger */
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+.dropdown-content a {
+  /* Style the dropdown options */
+  color: black; /* Text color */
+  padding: 12px 16px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make options take full width */
+}
+
 .dropdown-content a:hover {
-  color: #007bff;
+  /* Change background on hover */
+  background-color: #ddd; /* Light gray on hover */
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  /* Show the content on hover */
+  display: block; /* Make the dropdown content visible */
 }
 
 /* Hover effect */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 .input-group {
   margin-bottom: 20px;
 }
