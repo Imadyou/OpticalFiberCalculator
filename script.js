@@ -124,7 +124,7 @@ function calculatS12() {
     "balck",
     "purple",
     "orange",
-    "Torkus",
+    "Turquoise",
     "pink",
   ];
   let fiberPosition = (fiberNumber - 1) % 12;
