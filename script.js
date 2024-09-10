@@ -121,7 +121,7 @@ function calculatS12() {
     "yellow",
     "silver",
     "brown",
-    "balck",
+    "black",
     "purple",
     "orange",
     "Turquoise",
